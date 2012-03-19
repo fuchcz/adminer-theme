@@ -1,6 +1,6 @@
-# AT<sup>2</sup>
+# ADMINER THEME<sup>2</sup>
 Alternative style for [Adminer](http://adminer.org/ "Adminer").
-## Instalation
+## Installation
 Just put the `adminer.css` file alongside `adminer.php`.
 ## Screenshots
-[Screenshot 1](http://at2.fuch.cz/images/screenshot1.jpg "Screenshot 1"), [screenshot 2](http://at2.fuch.cz/images/screenshot2.jpg "Screenshot 2"), [screenshot 3](http://at2.fuch.cz/images/screenshot3.jpg "Screenshot 3").
+[Screenshot 1](http://fuch.cz/images/adminer-theme-2-screenshot1.jpg), [screenshot 2](http://fuch.cz/images/adminer-theme-2-screenshot2.jpg), [screenshot 3](http://fuch.cz/images/adminer-theme-2-screenshot3.jpg).
