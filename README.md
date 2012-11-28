@@ -1,5 +1,5 @@
-# ADMINER THEME<sup>2</sup>
-Alternative style for [Adminer](http://adminer.org/ "Adminer").
+# ADMINER THEME
+Alternative style for [Adminer](http://adminer.org/ "Adminer") (3.6.1).
 ## Installation
 Just put the `adminer.css` file alongside `adminer.php`.
 ## Screenshots

@@ -1,5 +1,5 @@
 /**
- * Alternative style for Adminer.
+ * Alternative style for Adminer 3.6.1.
  * Created by Miroslav Pokorný [http://fuch.cz].
  * Icons by Yusuke Kamiyamane [http://p.yusukekamiyamane.com/] (some of them were modified).
  * Slightly inspired by themes created by Martin Hořínek and Klemens Häckel.
@@ -42,7 +42,7 @@ html>/**/body h1 {
     padding: 6px 6px 5px 35px;
 }
 /* Logout */
-html>/**/body input[name="logout"] {
+html>/**/body input[name="logout"], #logout {
     background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAkVJREFUeNqMU01rE1EUPZkMaGI+JEMkXyaNiKINzSJLBSEEaRbRVf6Ai1Jw68K9O3dCN3ZR/AUxC0UCwW4k4KKoGKVioGATg4kNY2aSTDqZifdOmmmKFr1weG/e3HPeue++59i4BTgceAogg3/H6+kUm+YUDdMEaIRICyBkvPeeZVwul5XlIEVBEGyMXz7C8vJ1HHz/ttT49C4/UPqvKG2T0BANcybNZEmSTpCdTqeFPcqp1Wr8X1q5eVtSep3w14/v8yoJCSwwF/kbmedsN5lMotlsol6vo6eMpBurd1OmgawwMQDGnCzLMkajkU3mkTeYUp2hUAjRaBStVgu6rmNC6yKTOex6x2MLPA8EAhBF0RIwyQaL8Oj1emEYBoF4X4SLIOwwiS3yj2KxiG63i06nYzngTRYFZmWZMwcfxgE2sLNRKNi9GgwGKNB3uVxGIpGwHbC4oihQVdWas7AY1/aZkymVSrZALpdDtVpFPB7/w8H+Txnp+1uYvHkyK+EqeiBkgsEgUqmUpVypVBCLxRCJRGaHuCDAF+fFwzvHDvSjQ+REPjCPx2PdBxbgNe7O5KgEjnjkAiT/udkZsMBYPxZgsIv5nMkM6pjVWo65EDvgzYXnbUBWcKLvi2SO/hDw+/3QNM3CXECldfHHIc7vKdh9vJo97QEJ7rP4PD1wp69cuxT2+XxSu922nPQHJEAJ2lsdDzjx1Dd4iNG6PJS2t+trZ1zu/Ep6KUxuJZWqcuA/Yz0O/KIdlSEuazrWqIIsNWT3twADAMZTN2W0KIqPAAAAAElFTkSuQmCC") no-repeat 2px bottom;
     border: none;
     cursor: pointer;
@@ -288,8 +288,36 @@ fieldset {
 p {
     margin: 0.8em 0 0 0
 }
-#loader {
-    position: fixed;
-    top: 0;
-    left: 16em;
+
+/*** 3.6.1 ***/
+#logins a, #tables a {
+    background: #fbfbfb;
+}
+.js .checked td, .js .checked th {
+    background: #e6f3ff;
+}
+.column {
+    width: 32px;
+    height: 16px;
+}
+.js .column {
+    background: white;
+    padding: 0.2em;
+    border: 1px solid #EEE;
+    margin-top:-3px;
+    z-index: 100;
+}
+html>/**/body span.column a {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZBJREFUeNrEU79Lw0AUfpemhZI4CIpCJ92cHE4HJ0HEQcFRQdShIJ0E/5SCOBSkgxZE7CS4iIt06NIMnVxUcKhWCJb+iPl1l/gu1ppKKkIHH1zu3r33ffnu3Tvi+z4MYxIMaXLYWcy/9taEkBxOtOtqqDTzFbtNT0QTeIyFXbq5kgoIzq9rf1PgOk5fsNVyQZTo5/5AgqauQ1JVe75puuB5AI5lfe91OvidiiYwms0gOakogd9ovYPjuuCY5ifYMMC17cEKhDEEGO02yLIMNYsB9wjYSMCwPh7nvx8BK51DzZSjbo5E9biCBBAQoFW6ORpOmegi2nYJEyhNr9EHPOo9qvXAB3V1iY4mAF7OrjS83tLARkJwwbWsbPmoqCkJCXQmwRuPQVyW4Clf1ERM5IQxJNzK6vwWSmcQm1nfxv2Dsb0dyjHcOD4Vf87yu8uCVb2AMKaPAJPEJK5gRF7Y3yCTs7uBsnr1hJUPi7gUd9j2Q6AognEcKRwxMr08FxA83lS6KaLXnxHjRRL8y2v8EGAAqEvNnH+aSSAAAAAASUVORK5CYII=") no-repeat scroll 2px bottom;
+    height: 16px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-indent: 16px;
+    width: 16px;
+    left: 0px;
+}
+html>/**/body span.column a[href="#fieldset-search"] {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAexJREFUeNqkk98rBFEUx3d+3s2umfxYD0i7itjyK6K1ZYpSqyaFv8KLkidvkgelLSWSv0BebGIflB8hiSge/EieFEXWsnZ2fjt3M2tmUx721Ofe7rnnfu+5c84Qpmm6CjHSVaDReBBF0alKki6aphHMzbCsBYqBT+DBMIxLTdPkWCz2K/CHIQiMtPdEmtvCfcH6al91Op16jW9uXRzvbFTBfhyQcwL530HX9dYOYaCls1cUfBxyu1kK4Gsig8PluqGTR9uxJwg7yQkoipKfQX1rd18jfs3Lh6xgrI0uob9pd3Pt3iEgy3K+QInXW+zTIbEK3o3KvCzCzrSsa28pmoH4EkcVcAZ2IOAx/fGWvdU6jK0IUbSpSe+ZTObrzzLib4FRVfUJ3vkAB1gDXNY+Q5HMfnz9DgTuHAIIoRwsy3IMwwQ7W4KjqyvRm/fXZ9XNkEjLpFLLC9HD6Oz0lSRJZ44+sJkPbh+ZmZlbFMX+Caj3+dL8nB/8dUACuATxA57nJUfagiBgqkKh0Njp6bXp8XgmoZFKKYrCDeUABBzPzQ5+v98VDofHb2+fTY7jpqADK/9rYUuAyA4E4QkEAkOJRKIhmUzugQ83ioYLBKg/s2JbaxBjYCFLgMUVw2vAsKHbZjuG+dO+RKG/87cAAwBN/fNPi8FsEQAAAABJRU5ErkJggg==") no-repeat scroll 2px bottom;
+    left: 16px;
 }
